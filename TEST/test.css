@@ -1,0 +1,658 @@
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  background-color: black;
+}
+header {
+  background-image: url(sea.webp);
+  color: white;
+  padding: 20px;
+}
+body {
+  background-color: black;
+}
+.parent1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-evenly;
+  /* position: fixed;
+  background-color: black;
+  right: 0;
+  left: 0;
+  top: 0; */
+  height: 100px;
+}
+.book {
+  border: 1px solid rgb(232 96 76);
+  text-align: center;
+  width: fit-content;
+  padding: 20px;
+  padding-top: 20px;
+  background-color: rgb(232 96 76);
+}
+.middle {
+  background-color: rgb(232 96 76);
+  width: fit-content;
+  border: 1px solid rgb(232 96 76);
+  width: 150px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.child1 {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+}
+a {
+  color: white;
+}
+ul {
+  margin-top: 30px;
+  background-color: white;
+  color: black;
+  position: absolute;
+  display: none;
+  padding: 10px;
+  z-index: 34;
+}
+.para {
+  padding-top: 30px;
+  display: block;
+  text-decoration: none;
+}
+.para:hover {
+  color: rgb(232 96 76);
+}
+li {
+  font-size: 20px;
+  font-weight: 900;
+}
+li:hover {
+  color: rgb(232 96 76);
+}
+#home:hover ul {
+  display: block;
+}
+#pages:hover ul {
+  display: block;
+}
+#destination-menu:hover ul {
+  display: block;
+}
+#blogs:hover ul {
+  display: block;
+}
+#packages:hover ul {
+  display: block;
+}
+.child2 {
+  grid-column: span 2;
+  display: flex;
+  justify-content: space-evenly;
+}
+.child3 {
+  padding-top: 30px;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  padding-right: 20px;
+}
+.damn{
+  font-size: 20px;
+  color:rgb(232 96 76) ;
+}
+/* .parent2 {
+  display: flex;
+  justify-content: center;
+} */
+.main {
+  font-size: 80px;
+  margin-left: 50px;
+}
+.child4 {
+  margin: 180px;
+}
+.lorem {
+  font-size: 40px;
+  text-align: center;
+}
+.now {
+  padding: 10px;
+  border: 1px solid rgb(232 96 76);
+  width: 150px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(232 96 76);
+  margin-left: 500px;
+}
+.now:hover{
+  background-color: orangered;
+}
+.content {
+  background-color: black;
+  margin: 20px;
+}
+.parent3 {
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.destination {
+  background-color: black;
+  width: 300px;
+  height: 50px;
+  font-weight: 900;
+  border: 1px solid rgb(232 96 76);
+}
+.tour {
+  background-color: black;
+  width: 300px;
+  height: 50px;
+  font-weight: 900;
+  border: 1px solid rgb(232 96 76);
+}
+.find {
+  color: rgb(232 96 76);
+}
+::placeholder {
+  color: rgb(232 96 76);
+}
+.child5 {
+  border: 1px solid rgb(232 96 76);
+  background-color: black;
+  width: 300px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.book:hover {
+  background-color: rgb(178, 178, 0);
+}
+.date {
+  background-color: black;
+  color: rgb(232 96 76);
+  border: 1px solid rgb(232 96 76);
+}
+.parent4 {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 20px;
+  gap: 40px;
+}
+.about {
+  color: white;
+  font-size: 30px;
+  font-family: cursive;
+}
+.we {
+  color: white;
+  font-size: 40px;
+  font-family: "playfair display";
+}
+.lorem2 {
+  color: white;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+.child6 {
+  border: 0.5px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+.child7 {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.child8 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+.first,
+.second,
+.third,
+.fourth,
+.fifth,
+.sixth {
+  background-color: white;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 900;
+  transition: color 0.2s ease;
+}
+/* Make Parent 5 cards hover like child16 items */
+.first:hover,
+.second:hover,
+.third:hover,
+.fourth:hover,
+.fifth:hover,
+.sixth:hover {
+  color: rgb(232 96 76);
+}
+.on {
+  height: 80%;
+  width: 100%;
+}
+.nepal:hover {
+  color: rgb(232 96 76);
+  font-family: "playfair Display";
+}
+.num {
+  font-family: sans-serif;
+}
+.end {
+  background-color: rgb(232 96 76);
+  width: fit-content;
+  border: 1px solid rgb(232 96 76);
+  width: 150px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.parent6 {
+  display: flex;
+  justify-content: center;
+}
+.parent7 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.pop {
+  font-size: 30px;
+  font-family: cursive;
+  padding-left: 150px;
+  color: rgb(232 96 76);
+}
+.your {
+  font-size: 50px;
+  font-family: sans;
+  padding-top: 30px;
+}
+.off {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+.tokyo {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+.tokyo:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+.child10 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 24px;
+}
+.tokyo span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 16px;
+  font-size: 20px;
+}
+.dollar {
+  color: rgb(232 96 76);
+}
+.slash {
+  color: grey;
+  text-decoration: line-through;
+}
+.grey {
+  color: black;
+  padding: 0 16px 16px;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.last {
+  color: rgb(232 96 76);
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  cursor: pointer;
+}
+.last p {
+  margin: 0;
+}
+.link {
+  border: 1px solid rgb(232 96 76);
+  color: rgb(232 96 76);
+  width: fit-content;
+  margin: 50px;
+  padding: 20px;
+  cursor: pointer;
+}
+.tokyo .link {
+  margin: 16px;
+}
+.link:hover{
+  background-color: rgb(232 96 76);
+}
+.link:hover .last{
+  color: white;
+}
+.deb:hover{
+  color: white;
+}
+.dot {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.dot:hover {
+  background-color: rgb(232 96 76);
+}
+.child11 {
+  display: flex;
+  gap: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.child12 {
+  /* Add a dark overlay for better text contrast */
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url(sunset.jpeg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 120px 20px;
+  text-align: center;
+}
+.view {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 12px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.35);
+}
+.play {
+  font-size: 50px;
+  color: rgb(232 96 76);
+}
+.lorem5 {
+  font-size: 24px;
+  max-width: 700px;
+  margin: 0 auto 24px;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+.film {
+  width: 96px;
+  height: 96px;
+  border: 2px solid rgb(232 96 76);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin: 24px auto 0;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+  position: relative;
+  cursor: pointer;
+}
+.film::after { content: ""; position: absolute; inset: 0; border-radius: 50%; opacity: 0; }
+.film:hover {
+  background-color: rgb(232 96 76);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35), 0 0 0 6px rgba(232, 96, 76, 0.25);
+}
+.film:hover .play {
+  color: white;
+  transform: scale(1.04);
+}
+.play {
+  font-size: 50px;
+  color: rgb(232 96 76);
+  transition: transform 0.25s ease;
+  pointer-events: none; /* ensure hover/click are captured by the .film container */
+}
+.film:hover::after { animation: none; opacity: 0; }
+.child13 {
+  color: white;
+}
+.stars {
+  display: flex;
+  justify-content: space-around;
+  color: rgb(232 96 76);
+  gap: 20px;
+}
+.testimony {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-size: 30px;
+  color: rgb(232 96 76);
+  font-family: cursive;
+}
+.what {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-size: 40px;
+}
+.review {
+  color: white;
+  font-size: 20px;
+}
+.names {
+  color: white;
+  margin: 20px;
+  font-size: 20px;
+  font-weight: 900;
+}
+.star1,
+.star2,
+.star3 {
+  text-align: center;
+}
+.woman {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.blog {
+  color: rgb(232 96 76);
+  font-family: cursive;
+  margin-top: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+.desire {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.child16 {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+.india:hover {
+  color: rgb(232 96 76);
+}
+.train:hover {
+  color: rgb(232 96 76);
+}
+.camera:hover {
+  color: rgb(232 96 76);
+}
+.tower:hover {
+  color: rgb(232 96 76);
+}
+.train,
+.tower,
+.camera,
+.india {
+  color: white;
+}
+.travel {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.true {
+  margin-top: 10px;
+  font-size: 25px;
+}
+.child17 {
+  display: flex;
+  gap: 20px;
+}
+footer {
+  margin-top: 50px;
+  color: white;
+}
+#last {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin: 50px;
+}
+.nav {
+  font-size: 25px;
+}
+.uno {
+  font-size: 15px;
+}
+.uno:hover {
+  color: rgb(232 96 76);
+}
+#one {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#two {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#three {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#four {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.location {
+  color: rgb(232 96 76);
+}
+#news {
+  font-size: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#email {
+  background-color: black;
+  border: 1px solid white;
+  height: 50px;
+}
+#email:hover {
+  background-color: white;
+}
+#sub {
+  background-color: rgb(232 96 76);
+  text-align: center;
+  padding: 10px;
+}
+.info {
+  padding: 10px;
+}
+#socials {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 900;
+  margin-top: 12px;
+  margin-bottom: 8px;
+  position: relative;
+  z-index: 1;
+}
+#media {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 12px;
+  height: 100px;
+  gap: 16px;
+}
+/* Normalize social icon appearance */
+#media i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+.facebook {
+  border: 10px solid rgb(22 116 234);
+  color: rgb(22 116 234);
+}
+.youtube {
+  border: 10px solid red;
+  color: red;
+}
+.instagram {
+  border: 10px solid #cf2872;
+  color: #cf2872;
+}
+#media a:hover .facebook { background-color: rgb(22 116 234); color: white; }
+#media a:hover .youtube { background-color: red; color: white; }
+#media a:hover .instagram { background-color: #cf2872; color: white; }
+#media a:hover i { transform: translateY(-1px); }
+#end {
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#six {
+  margin: 10px;
+}
+#accept {
+  display: flex;
+  justify-content: end;
+  margin: 10px;
+  font-size: 20px;
+}

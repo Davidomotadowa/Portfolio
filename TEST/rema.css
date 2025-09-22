@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.parent{
+  background-color: rgb(3, 3, 63);
+  color: white;
+  width: 700px;
+  height: 345px;
+ margin-left: 40px;
+ margin-top: 200px;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 20px;
+ padding: 20px;
+}
+.grandchild{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+span{
+    color: purple;
+}
+.discover{
+    padding-top: 25px;
+    font-weight:lighter;
+    font-size: 15px;
+}
+.ten{
+    font-weight: 900;
+    font-size: 25px;
+}
+.company{
+    font-weight: lighter;
+    font-size: 12px;
+}
+img{
+    height: 300px;
+}
