@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- <a class="skip-link" href="#main">Skip to content</a> -->
+
+    <header class="site-header" role="banner">
+      <nav class="nav" aria-label="Primary">
+        <a class="logo" href="#hero" aria-label="Go to start">&lt;/&gt; Dev Dkcrypt</a>
+        <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav__bar"></span>
+          <span class="nav__bar"></span>
+          <span class="nav__bar"></span>
+        </button>
+        <ul id="navMenu" class="nav__list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <button class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+              <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- Hero / Intro -->
+      <section id="hero" class="section hero" aria-label="Intro">
+        <div class="container">
+          <div class="hero__content">
+            <p class="eyebrow">Front-End Developer</p>
+            <h1 class="hero__title">Building fast, accessible, and beautiful web experiences.</h1>
+            <p class="hero__subtitle">
+              I craft responsive interfaces, delightful interactions, and robust component systems with modern web technologies.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#projects">View Projects</a>
+              <a class="btn" href="#contact">Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section" aria-label="About">
+        <div class="container grid grid-2">
+          <div>
+            <h2>About Me</h2>
+            <p>
+              Hi, I’m a front-end developer focused on performance, accessibility, and elegant UX. I enjoy turning complex
+              problems into simple, beautiful, and intuitive designs.
+            </p>
+            <p>
+              My toolkit includes semantic HTML, modern CSS (Flexbox/Grid), and JavaScript frameworks. I care about
+              pixel-perfect implementation and design systems that scale.
+            </p>
+          </div>
+          <div class="about__highlights">
+            <ul class="checklist">
+              <li>Responsive design and component libraries</li>
+              <li>Accessibility (WCAG) and keyboard-friendly UI</li>
+              <li>Performance optimization and best practices</li>
+              <li>Clean, maintainable code with reusability</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section section--alt" aria-label="Skills">
+        <div class="container">
+          <h2>Skills</h2>
+          <ul class="skills">
+            <li>HTML5</li>
+            <li>CSS3 / Sass</li>
+            <li>JavaScript (ES6+)</li>
+            <li>React</li>
+            <!-- <li>Tailwind / CSS Modules</li>
+            <li>Responsive Design</li>
+            <li>Accessibility</li> -->
+            <li>Git / GitHub</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section" aria-label="Projects">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="projects grid grid-2">
+            <article class="card">
+              <div class="card__media" aria-hidden="true"></div>
+              <div class="card__body">
+                <h3>Anime Website</h3>
+                <p>A stylish anime-themed website showcasing responsive layouts and polished UI details.</p>
+                <div class="card__actions">
+                  <a class="btn btn--small" href="./ANIME%20WEBSITE/" aria-label="Open live demo for Anime Website">Live</a>
+                  <a class="btn btn--small btn--ghost" href="#" aria-label="Open code for Anime Website">Code</a>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card__media" aria-hidden="true"></div>
+              <div class="card__body">
+                <h3>Test Project</h3>
+                <p>Experiment playground highlighting components, interactions, and layout techniques.</p>
+                <div class="card__actions">
+                  <a class="btn btn--small" href="./TEST/test.html" aria-label="Open live demo for Test Project">Live</a>
+                  <a class="btn btn--small btn--ghost" href="#" aria-label="Open code for Test Project">Code</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section section--alt" aria-label="Contact">
+        <div class="container">
+          <h2>Contact</h2>
+          <form class="contact" aria-label="Contact form">
+            <div class="grid grid-2">
+              <label>
+                <span>Name</span>
+                <input type="text" name="name" placeholder="Your name" required />
+              </label>
+              <label>
+                <span>Email</span>
+                <input type="email" name="email" placeholder="you@example.com" required />
+              </label>
+            </div>
+            <label class="mt-2">
+              <span>Message</span>
+              <textarea name="message" rows="5" placeholder="How can I help?" required></textarea>
+            </label>
+            <button class="btn btn--primary mt-2" type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <p>© <span id="year"></span>— Front-End Developer</p>
+      </div>
+    </footer>
+
+    <script src="index.js" defer></script>
+  </body>
+</html>
